@@ -24,6 +24,15 @@ class Cat : Animal
     }
 }
 
+
+class Bird : Animal
+{
+    public override void MakeSound()
+    {
+        Console.WriteLine("Chirp");
+    }
+}
+
 class Program
 {
     static void Main(string[] args)
@@ -31,9 +40,11 @@ class Program
         Animal animal = new Animal();
         Dog dog = new Dog();
         Cat cat = new Cat();
+        Bird bird = new Bird();
 
         animal.MakeSound();
         dog.MakeSound();
         cat.MakeSound();
+        bird.MakeSound();
     }
 }
